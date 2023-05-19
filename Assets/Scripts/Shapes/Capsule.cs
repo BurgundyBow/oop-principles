@@ -1,5 +1,6 @@
 using UnityEngine;
 public class Capsule : Shape
+// INHERITANCE ^
 {
     private float xAngle, yAngle, zAngle;
     public override void DisplayText()
@@ -9,5 +10,6 @@ public class Capsule : Shape
         yAngle = Random.Range(0.0f, 360.0f);
         zAngle = Random.Range(0.0f, 360.0f);
         transform.Rotate(xAngle, yAngle, zAngle);
+        // POLYMORPHISM ^
     }
 }

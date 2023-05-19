@@ -10,6 +10,7 @@ public class HealthSystem : MonoBehaviour
     private float _health;
     [SerializeField] private float healthReadCounter;
 
+    //ENCAPSULATION
     public float Health
     {
         get
@@ -24,6 +25,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
+    //ABSTRACTION
     public void TakeDamage(float _amount = 1)
     {
         Health = Health - _amount;

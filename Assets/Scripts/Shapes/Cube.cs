@@ -1,5 +1,6 @@
 using UnityEngine;
 public class Cube : Shape
+// INHERITANCE ^
 {
     private float scale;
     [SerializeField] HealthSystem healthSystem;
@@ -13,7 +14,7 @@ public class Cube : Shape
         {
             healthSystem.TakeDamage(5);
         }
-       // make this random scale
+       // POLYMORPHISM ^
    
     }
 }

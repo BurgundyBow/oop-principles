@@ -5,6 +5,8 @@ public class Shape : MonoBehaviour
 {
     [SerializeField] protected TMP_Text displayText;
     [SerializeField] private string shapeName;
+
+    //POLYMORPHISM 
     public virtual void DisplayText()
     {
         Debug.Log("clicked");
