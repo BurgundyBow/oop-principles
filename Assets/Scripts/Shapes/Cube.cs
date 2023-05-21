@@ -1,10 +1,11 @@
 using UnityEngine;
-public class Cube : Shape
-// INHERITANCE ^
+
+public class Cube : Shape // INHERITANCE
 {
     private float scale;
     [SerializeField] HealthSystem healthSystem;
-    public override void DisplayText()
+    
+    public override void DisplayText() // POLYMORPHISM
     {
         base.DisplayText();
         scale = Random.Range(0.0f, 3.0f);
@@ -14,7 +15,5 @@ public class Cube : Shape
         {
             healthSystem.TakeDamage(5);
         }
-       // POLYMORPHISM ^
-   
     }
 }

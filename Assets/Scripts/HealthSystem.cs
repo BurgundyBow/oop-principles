@@ -7,10 +7,11 @@ public class HealthSystem : MonoBehaviour
 {
     [SerializeField] private Slider slider;
 
-    private float _health;
     [SerializeField] private float healthReadCounter;
 
     //ENCAPSULATION
+    private float _health;
+
     public float Health
     {
         get
